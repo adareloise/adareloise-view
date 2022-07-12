@@ -1,0 +1,29 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="/component/layout/head :: head"></head>
+
+<body class="is-preload" >
+
+	<!-- Menu -->
+	<header th:replace="/component/layout/header :: header"></header>
+
+	<!-- Present 
+	<div th:replace="/component/layout/home :: home"></div>
+	-->
+	
+	<!-- Footer -->
+	<div th:replace="/component/layout/footer :: footer"></div>
+
+	<!-- Scripts -->
+	<div th:replace="/component/layout/scripts :: scripts"></div>
+
+</body>
+
+<!-- Scripts 
+<script>
+	$(document).ready(function () {
+		$('#products').DataTable();
+	});
+</script>
+-->
+</html>
