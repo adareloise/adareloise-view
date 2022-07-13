@@ -3,8 +3,8 @@ package com.adareloise.app.model.entity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.Table;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,14 +16,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-@Table(name = "poems")
-public class Poem {
+@Table(name = "autors")
+public class Autor {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer Id;
-	private String title;
-	private String resume;
-	private String poem;
-	private String Autor;
+	
+	private String name;
+	private String subname;
+	private String perfil;
 }

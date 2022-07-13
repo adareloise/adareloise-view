@@ -1,5 +1,5 @@
 package com.adareloise.app.model.dto;
 
-public class Mail {
+public class Request {
 
 }
