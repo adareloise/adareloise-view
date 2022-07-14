@@ -1,4 +1,4 @@
-package com.adareloise.app.model.service;
+package com.adareloise.app.service;
 
 import java.util.List;
 

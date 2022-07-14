@@ -1,11 +1,11 @@
-package com.adareloise.app.model.service.impl;
+package com.adareloise.app.service.impl;
 
 import java.util.List;
 
 import org.springframework.stereotype.Component;
 
 import com.adareloise.app.model.entity.Poem;
-import com.adareloise.app.model.service.PoemService;
+import com.adareloise.app.service.PoemService;
 
 @Component
 public class PoemServiceImpl implements PoemService{

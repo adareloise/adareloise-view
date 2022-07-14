@@ -1,19 +1,22 @@
 <section class="wrapper style1 align-center" th:fragment="seven">
 	<div class="inner medium">
 		<h2>Contacto</h2>
-		<form method="post" action="#">
+		<form method="post" th:action="@{/contact}" th:object="${contact}">
 			<div class="fields">
 				<div class="field half">
 					<label for="name">Nombre</label>
-					<input type="text" name="name" id="name" value="" />
+					<input type="text"  th:field="*{name}" name="name" id="name" value="" />
+					<!-- <small class="form-text text-danger" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></small> -->
 				</div>
 				<div class="field half">
 					<label for="email">Email</label>
-					<input type="email" name="email" id="email" value="" />
+					<input type="email" th:field="*{mail}"  name="email" id="email" value="" />
+					<!-- <small class="form-text text-danger" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></small> -->
 				</div>
 				<div class="field">
 					<label for="message">Mensaje</label>
-					<textarea name="message" id="message" rows="6"></textarea>
+					<textarea name="message" th:field="*{message}"  id="message" rows="6"></textarea>
+				<!-- <small class="form-text text-danger" th:if="${#fields.hasErrors('message')}" th:errors="*{message}"></small> -->
 				</div>
 			</div>
 			<ul class="actions special">

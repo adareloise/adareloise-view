@@ -1,11 +1,11 @@
-package com.adareloise.app.model.service.impl;
+package com.adareloise.app.service.impl;
 
 import java.util.List;
 
 import org.springframework.stereotype.Component;
 
 import com.adareloise.app.model.entity.Autor;
-import com.adareloise.app.model.service.AutorService;
+import com.adareloise.app.service.AutorService;
 
 @Component
 public class AutorServiceImpl implements AutorService{
