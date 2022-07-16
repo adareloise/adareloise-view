@@ -11,20 +11,13 @@ import com.adareloise.app.model.dto.Contact;
 @Controller
 public class HomeController {
 	
-	@GetMapping("/")
+	@GetMapping()
 	public String list(Model model) {
 				
 		model.addAttribute("title", "Home");
 		model.addAttribute("contact", new Contact());
 		
-		return "index";
+		return "home";
 	}
-	
-	@PostMapping("/contact")
-	public String contact(Model model, @ModelAttribute Contact contact) {
-		
-		model.addAttribute("name", contact.getName());
-		
-		return  "redirect:/";
-	}
+
 }
