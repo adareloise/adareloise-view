@@ -1,0 +1,35 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head th:replace ="layout/index :: head">
+	</head >
+	<body>
+	<div th:fragment="poems" class="py-4 m-4">
+		
+		<div class="card bg-light">
+
+			<div class="card-header" th:text="${title}"></div>
+
+			<!-- status -->
+			<div class="card-body">
+
+				<table id="poems" class="display">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Name</th>
+							<th>Date</th>
+							<th>Resume</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="poem: ${poems}">
+							<td th:text="${poem.id}"></td>
+							<td th:text="${poem.name}"></td>
+							<td th:text="${product.createAt}"></td>
+							<td th:text="${poem.date}"></td>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

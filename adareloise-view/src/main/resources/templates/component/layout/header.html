@@ -1,0 +1,40 @@
+<header th:fragment-="header">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<div class="row">
+					<div class="col-sm">
+						<img th:src="@{/img/icon/adareloise-icon.png}" alt="Adareloise icon" style="width:90px" />
+					</div>
+					<div class="col-sm">
+						<h4 class="my-3">Adareloise</h4>
+					</div>
+				</div>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{/}"><span class="icon solid style2 major fa-home "></span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{/documents}"><span class="icon solid style2 major fa-folder "></span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{/gallery}"><span class="icon solid style2 major fa-palette "></span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{/services}"><span class="icon solid style2 major fa-cog "></span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{/contact}"><span class="icon solid style2 major fa-envelope "></span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div th:replace="/component/object/status :: status"></div>
+</header>

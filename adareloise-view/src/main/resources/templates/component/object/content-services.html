@@ -1,0 +1,30 @@
+<section th:fragment="content-1"
+	class="banner onload-image-fade-in onload-content-fade-right style2 fullscreen orient-center content-align-center image-position-center">
+	<div class="content" style="width:100%">
+			<h2>Services</h2>
+			<div class="items style1 medium onscroll-fade-in">
+				<section>
+					<span class="icon solid style2 major fa-sync-alt "></span>
+					<h3>Reciclando App</h3>
+					<p class="p-4">Reciclaje de base</p>
+				</section>
+				<section>
+					<span class="icon solid style2 major fa-leaf"></span>
+					<h3>Permacultura</h3>
+					<p class="p-4">Analisis y reflexion</p>
+				</section>
+				<section>
+					<span class="icon solid style2 major fa-music"></span>
+					<h3>Arte</h3>
+					<p class="p-4">Music, studio and films</p>
+				</section>
+			</div>
+			<p>Gracias al habitad y rescontruccion el medio de la inspiración</p>
+			
+			<!-- Footer -->
+			<div th:replace="/component/layout/footer :: footer"></div>
+	</div>
+	<div class="image">
+		<img th:src="@{img/pexels-pixabay-66869.jpg}" alt="">
+	</div>
+</section>
