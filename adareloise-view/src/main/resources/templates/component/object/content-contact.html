@@ -2,22 +2,22 @@
 	class="banner onload-image-fade-in onload-content-fade-right style2 fullscreen orient-center content-align-center image-position-center">
 	<div class="content" style="width:100%">
 		<h2>Contacto</h2>
-		<form method="post" th:action="@{/contact}" th:object="${contact}">
+		<form method="POST" th:action="@{/contact}" th:object="${contact}">
 			<div class="fields">
 				<div class="field half">
 					<label for="name">Nombre</label>
-					<input type="text"  th:field="*{name}" name="name" id="name" value="" />
-					<!-- <small class="form-text text-danger" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></small> -->
+					<input type="text"  th:field="*{name}" name="name" id="name"/>
+        			<div class="alert alert-warning m-2" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
 				</div>
 				<div class="field half">
 					<label for="email">Email</label>
-					<input type="email" th:field="*{mail}"  name="email" id="email" value="" />
-					<!-- <small class="form-text text-danger" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></small> -->
+					<input type="email" th:field="*{email}"  name="email" id="email" />
+        			<div class="alert alert-warning m-2" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
 				</div>
 				<div class="field">
 					<label for="message">Mensaje</label>
 					<textarea name="message" th:field="*{message}"  id="message" rows="6"></textarea>
-				<!-- <small class="form-text text-danger" th:if="${#fields.hasErrors('message')}" th:errors="*{message}"></small> -->
+        			<div class="alert alert-warning m-2" th:if="${#fields.hasErrors('message')}" th:errors="*{message}"></div>
 				</div>
 			</div>
 			<ul class="actions special">
